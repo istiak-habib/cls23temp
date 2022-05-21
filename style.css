@@ -1,0 +1,127 @@
+/* header */
+
+.header-pic{
+    flex-basis: 30%;
+}
+
+.header-pic img{
+    width: 100px;
+}
+
+.header-menu{
+    flex-basis: 70%;
+}
+
+.h-menu li{
+    position: relative;
+}
+
+.h-menu > li::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.h-menu > li:hover::after{
+    width: 100%;
+    left: 0%;
+}
+
+.h-menu li a{
+    font-size: 20px
+}
+
+/* banner */
+
+.section-1{
+    flex-basis: 75%;
+    padding: 0px 40px;
+}
+
+.section-2{
+    flex-basis: 25%;
+    border-left: 3px solid red;
+    background-color: rgb(217, 217, 217);
+}
+
+.section-2 img{
+    width: 280px;
+}
+
+/* sub-section */
+
+.sub-section {
+    display: flex;
+    flex: 1;
+    border: 2px solid green;
+    height: 250px;
+    padding: 0%;
+}
+
+.ss-all {
+    width: 282px;
+}
+
+.inner {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    color: #fff;
+    background-color: brown;
+}
+
+/* middle-section */
+
+.middle-section {
+    display: flex;
+    flex: 1;
+    border: 2px solid green;
+    padding: 0%;
+}
+
+.middle-section-extra {
+    display: flex;
+    flex: 1;
+    flex-grow: 2;
+    border: 2px solid green;
+    padding: 0%;
+}
+
+.ms-para {
+    padding: 10px 20px;
+}
+
+/* end-section */
+
+.end-section {
+    display: flex;
+    flex: 1;
+    border: 2px solid green;
+    padding: 0%;
+}
+
+.es-inner {
+    width: 283px;
+}
+
+.esi-item{
+    width: 36px;
+    height: 30px;
+    border: 2px solid green;
+    color: #fff;
+    background-color: brown;
+}
+
+.esi-btn-item{
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid green;
+    color: #fff;
+    background-color: brown;
+}
